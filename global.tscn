@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://r0ffqpd5m38p"]
+
+[ext_resource type="Script" uid="uid://cpgpivlijxjfl" path="res://global.gd" id="1_6q3x5"]
+[ext_resource type="AudioStream" uid="uid://pphmo4hwgxcs" path="res://confirmation_002.ogg" id="2_qxp0b"]
+
+[node name="global" type="Node"]
+script = ExtResource("1_6q3x5")
+
+[node name="monedasonido" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_qxp0b")

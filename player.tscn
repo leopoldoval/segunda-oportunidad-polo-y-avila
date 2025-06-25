@@ -98,3 +98,16 @@ libraries = {
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="playerGUI" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="playerGUI"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="monedaLabel2" type="Label" parent="playerGUI/HBoxContainer"]
+layout_mode = 2
+text = "Monedas :"
+
+[node name="monedaLabel" type="Label" parent="playerGUI/HBoxContainer"]
+layout_mode = 2

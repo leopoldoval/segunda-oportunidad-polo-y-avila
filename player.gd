@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name player
 
 var speed := 120
 var direccion := 0.0
@@ -6,6 +7,10 @@ var jump:= 280
 const gravity := 9
 @onready var anim := $AnimationPlayer
 @onready var sprite := $Sprite2D
+@onready var monedaLabel := $playerGUI/HBoxContainer/monedaLabel
+
+func _ready():
+	Global.player =self
 
 func  _physics_process(delta):
 	direccion = Input.get_axis("ui_left","ui_right")
@@ -26,3 +31,6 @@ func  _physics_process(delta):
 	
 	move_and_slide()
 	
+
+func actualizaInterfazMoneda():
+	monedaLabel.text = str(Global.moneda)
