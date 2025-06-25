@@ -58,5 +58,6 @@ shape = SubResource("CircleShape2D_unbiu")
 libraries = {
 &"": SubResource("AnimationLibrary_n4mdk")
 }
+autoplay = "moneda"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
