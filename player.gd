@@ -39,3 +39,4 @@ func actualizaInterfazMoneda():
 
 func _on_reset_area_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()
+	

@@ -42,3 +42,4 @@ func _on_body_entered(body: Node2D) -> void:
 					body.puede_rebotar(fuerza_rebote)
 				else:
 					body.velocity.y = body.jump * fuerza_rebote 
+	pass # Replace with function body.
