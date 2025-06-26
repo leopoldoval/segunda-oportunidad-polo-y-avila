@@ -1517,7 +1517,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_aqk2v")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aqk2v"]
-size = Vector2(2360, 123)
+size = Vector2(2360, 271.5)
 
 [sub_resource type="Curve2D" id="Curve2D_aqk2v"]
 _data = {
@@ -1664,7 +1664,7 @@ type = 2
 [node name="reset_area" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reset_area"]
-position = Vector2(565, 406)
+position = Vector2(565, 331.75)
 shape = SubResource("RectangleShape2D_aqk2v")
 
 [node name="Path2D" type="Path2D" parent="."]
@@ -1741,7 +1741,7 @@ position = Vector2(700, 94)
 position = Vector2(-209, -81)
 
 [node name="ghost2" parent="ghost" instance=ExtResource("13_2o6r5")]
-position = Vector2(392, 4)
+position = Vector2(390, 4)
 
 [connection signal="body_entered" from="reset_area" to="Player" method="_on_reset_area_body_entered"]
 [connection signal="body_exited" from="caliz" to="Player" method="_on_caliz_body_exited"]
