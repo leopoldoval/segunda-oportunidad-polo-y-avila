@@ -40,3 +40,9 @@ func actualizaInterfazMoneda():
 func _on_reset_area_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()
 	
+
+
+
+func _on_caliz_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://world.tscn")
+	pass # Replace with function body.
