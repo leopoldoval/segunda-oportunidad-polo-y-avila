@@ -1714,21 +1714,21 @@ position = Vector2(212, 5)
 position = Vector2(230, 5)
 
 [node name="plataforma" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(-112, -109)
+position = Vector2(-70, -114)
 
 [node name="plataforma2" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(108, -175)
 type = 1
 
 [node name="plataforma3" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(391, -210)
+position = Vector2(428, -194)
 type = 3
 
 [node name="plataforma4" parent="." instance=ExtResource("4_aqk2v")]
 position = Vector2(586, -87)
 
 [node name="Area2D5" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(917, -85)
+position = Vector2(914, -69)
 type = 2
 
 [node name="reset_area" type="Area2D" parent="."]
@@ -1819,8 +1819,16 @@ position = Vector2(-209, -81)
 position = Vector2(390, 4)
 
 [node name="Area2D" parent="." instance=ExtResource("4_aqk2v")]
-position = Vector2(-397, -32)
-type = 3
+position = Vector2(1023, -68)
+type = 2
+
+[node name="Area2D2" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(1127, -69)
+type = 2
+
+[node name="Area2D3" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(1220, -69)
+type = 2
 
 [connection signal="body_entered" from="caliz" to="Player" method="_on_caliz_body_entered"]
 [connection signal="body_entered" from="reset_area" to="Player" method="_on_reset_area_body_entered"]
