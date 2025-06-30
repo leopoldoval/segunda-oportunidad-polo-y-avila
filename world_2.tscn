@@ -217,11 +217,11 @@ _data = {
 &"plataforma vertical ": SubResource("Animation_036b0")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eiokd"]
-size = Vector2(24, 29)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ngp3s"]
 size = Vector2(5242, 264.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eiokd"]
+size = Vector2(24, 29)
 
 [node name="world 2" type="Node"]
 
@@ -259,18 +259,6 @@ libraries = {
 }
 autoplay = "plataforma vertical "
 
-[node name="caliz" type="Area2D" parent="plataforma3/Path2D2"]
-position = Vector2(1160, -132)
-
-[node name="Sprite2D" type="Sprite2D" parent="plataforma3/Path2D2/caliz"]
-position = Vector2(902, 39)
-scale = Vector2(0.734375, 0.78125)
-texture = ExtResource("4_mv2s0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="plataforma3/Path2D2/caliz"]
-position = Vector2(902, 44.5)
-shape = SubResource("RectangleShape2D_eiokd")
-
 [node name="plataforma4" parent="." instance=ExtResource("3_fu0tf")]
 position = Vector2(716, 90)
 type = 3
@@ -291,9 +279,23 @@ position = Vector2(1844, 128)
 position = Vector2(1458, -39)
 type = 1
 
-[node name="reset_area" type="Area2D" parent="."]
+[node name="reset_area2" type="Area2D" parent="."]
 position = Vector2(1458, -39)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="reset_area"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reset_area2"]
 position = Vector2(-27, 512)
 shape = SubResource("RectangleShape2D_ngp3s")
+
+[node name="caliz" type="Area2D" parent="."]
+position = Vector2(1199, -96)
+
+[node name="Sprite2D" type="Sprite2D" parent="caliz"]
+position = Vector2(902, 39)
+scale = Vector2(0.734375, 0.78125)
+texture = ExtResource("4_mv2s0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="caliz"]
+position = Vector2(902, 44.5)
+shape = SubResource("RectangleShape2D_eiokd")
+
+[connection signal="body_entered" from="reset_area2" to="Player" method="_on_reset_area_2_body_entered"]
