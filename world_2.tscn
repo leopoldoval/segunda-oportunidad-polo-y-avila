@@ -286,16 +286,17 @@ position = Vector2(1458, -39)
 position = Vector2(-27, 512)
 shape = SubResource("RectangleShape2D_ngp3s")
 
-[node name="caliz" type="Area2D" parent="."]
+[node name="caliz2" type="Area2D" parent="."]
 position = Vector2(1199, -96)
 
-[node name="Sprite2D" type="Sprite2D" parent="caliz"]
+[node name="Sprite2D" type="Sprite2D" parent="caliz2"]
 position = Vector2(902, 39)
 scale = Vector2(0.734375, 0.78125)
 texture = ExtResource("4_mv2s0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="caliz"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="caliz2"]
 position = Vector2(902, 44.5)
 shape = SubResource("RectangleShape2D_eiokd")
 
 [connection signal="body_entered" from="reset_area2" to="Player" method="_on_reset_area_2_body_entered"]
+[connection signal="body_entered" from="caliz2" to="Player" method="_on_caliz_2_body_entered"]

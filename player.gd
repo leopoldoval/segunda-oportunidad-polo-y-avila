@@ -53,3 +53,9 @@ func _on_caliz_body_entered(body: Node2D) -> void:
 func _on_reset_area_2_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()
 	pass # Replace with function body.
+
+
+
+func _on_caliz_2_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://world.tscn")
+	 # Replace with function body.
