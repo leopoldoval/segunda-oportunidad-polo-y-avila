@@ -9,8 +9,11 @@ const gravity := 9
 @onready var sprite := $Sprite2D
 @onready var monedaLabel := $playerGUI/HBoxContainer/monedaLabel
 
+
+
 func _ready():
 	Global.player =self
+	add_to_group("player")
 
 func  _physics_process(delta):
 	direccion = Input.get_axis("ui_left","ui_right")

@@ -1818,5 +1818,9 @@ position = Vector2(-209, -81)
 [node name="ghost2" parent="ghost" instance=ExtResource("13_2o6r5")]
 position = Vector2(390, 4)
 
+[node name="Area2D" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(-397, -32)
+type = 3
+
 [connection signal="body_entered" from="caliz" to="Player" method="_on_caliz_body_entered"]
 [connection signal="body_entered" from="reset_area" to="Player" method="_on_reset_area_body_entered"]

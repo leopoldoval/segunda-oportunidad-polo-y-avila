@@ -38,6 +38,7 @@ func _on_body_entered(body: Node2D) -> void:
 				await get_tree().create_timer(0.5).timeout
 				queue_free()
 			TipoPlataforma.REBOTE:
+				print("Rebote")
 				if body.has_method("puede_rebotar"):
 					body.puede_rebotar(fuerza_rebote)
 				else:
