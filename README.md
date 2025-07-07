@@ -246,11 +246,12 @@ DESCRIPCIÓN DE LOS CÓDIGOS EMPLEADOS PARA EL FUNCIONAMIENTO:
 REDACTAR DE MANERA DETALLADA POR INTEGRANTE, LAS DIFICULTADES QUE SE TUVIERON AL USAR LAS HERRAMIENTAS COLAVORATIVAS:
 
 
+POLO VALDIVIA 
 Durante el desarrollo del videojuego, me enfrenté a diversas dificultades relacionadas con el uso de herramientas colaborativas. Realizar este trabajo en equipo fue complicado por este motivo. El diseño, la programación, la implementación de escenas, la interfaz gráfica, y las pruebas fueron un desafio para ambos. A continuación, describo los principales retos encontrados:
 
-Godot Engine no tiene un sistema de colaboración en tiempo real como otras herramientas. Esto significa que la edición simultánea de escenas y scripts puede causar conflictos de archivos. Aunque esto no fue un problema directo al trabajar solo, representa una limitación importante en entornos colaborativos, y fue una barrera anticipada al momento de planear el proyecto con equipo.
+-Godot Engine no tiene un sistema de colaboración en tiempo real como otras herramientas. Esto significa que la edición simultánea de escenas y scripts puede causar conflictos de archivos. Aunque esto no fue un problema directo al trabajar solo, representa una limitación importante en entornos colaborativos, y fue una barrera anticipada al momento de planear el proyecto con equipo.
 
-Al asumir gran parte de estos los roles, enfrenté una sobrecarga de responsabilidades, lo que ralentizó algunas etapas del desarrollo, como la creación de niveles adicionales, pruebas de errores, y ajustes visuales. Esta situación también implicó menos tiempo para usar herramientas colaborativas más complejas, pues era prioritario enfocarme en las tareas esenciales del juego.
+-Al asumir gran parte de estos los roles, enfrenté una sobrecarga de responsabilidades, lo que ralentizó algunas etapas del desarrollo, como la creación de niveles adicionales, pruebas de errores, y ajustes visuales. Esta situación también implicó menos tiempo para usar herramientas colaborativas más complejas, pues era prioritario enfocarme en las tareas esenciales del juego.
 
 UNA BREVE CONCLUSIÓN DEL USO E IMPORTANCIA DE LAS HERRAMIENTAS COLABORATIVAS PARA EL PROGRAMADOR:
 
