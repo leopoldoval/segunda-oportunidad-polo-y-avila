@@ -1732,6 +1732,7 @@ position = Vector2(914, -69)
 type = 2
 
 [node name="reset_area" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reset_area"]
 position = Vector2(445.5, 335.25)
